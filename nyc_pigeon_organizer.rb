@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
 
       names.each do |name|
 
-        if n{name.to_sym} = nil
+        if n{name.to_sym} == nil
           crap = {}
           crap{property} = []
           crap{property} << specific.to_s
