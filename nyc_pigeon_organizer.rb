@@ -19,6 +19,6 @@ def nyc_pigeon_organizer(data)
     end
   memo
   end
-  
+
   n
 end
