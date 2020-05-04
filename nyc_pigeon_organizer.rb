@@ -6,9 +6,9 @@ def nyc_pigeon_organizer(data)
     inner_hash({}) do |memo_1, (specific, names)|
 
       names.each do |name|
-        q = n{name.to_sym}
-        q{property} = specific
-        n{name.to_sym} = q
+
+        n{name.to_sym}{property} << specific.to_s
+
       end
 
     memo_1
