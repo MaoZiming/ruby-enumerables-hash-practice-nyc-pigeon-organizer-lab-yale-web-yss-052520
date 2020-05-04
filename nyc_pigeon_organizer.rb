@@ -7,8 +7,15 @@ def nyc_pigeon_organizer(data)
 
       names.each do |name|
 
-        n{name.to_sym}{property} << specific.to_s
-
+        if n{name.to_sym} = nil 
+          crap = {}
+          crap{property} = []
+          crap{property} << specific.to_s
+          n{name.to_sym} = crap
+        else 
+          n{name.to_sym}{property} << specific.to_s
+        end
+        
       end
 
     memo_1
