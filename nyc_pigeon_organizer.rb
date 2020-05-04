@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   n = {}
 
   data.reduce({}) do |memo, (property, inner_hash)|
-    inner_hash({}) do |memo_1, (specific, names)|
+    inner_hash.reduce({}) do |memo_1, (specific, names)|
 
       names.each do |name|
 
