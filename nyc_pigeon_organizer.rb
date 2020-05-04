@@ -9,8 +9,7 @@ def nyc_pigeon_organizer(data)
 
         if n{name.to_sym} == nil
           crap = {}
-          crap{property} = []
-          crap{property} << specific.to_s
+          crap{property} = [specific.to_s]
           n{name.to_sym} = crap
         else
           n{name.to_sym}{property} << specific.to_s
